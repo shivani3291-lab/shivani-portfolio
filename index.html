@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivani Chaudhari | AI/ML Engineer & Python Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Floating Particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">SC<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-line">Hi, I'm</span>
+        <span class="hero-name">Shivani<span class="accent">.</span></span>
+      </h1>
+      <div class="hero-subtitle">
+        <span class="typewriter" id="typewriter"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        3 years building production ML pipelines, real-time gRPC systems, and full-stack platforms at Hitachi Digital Services — powering national defence infrastructure.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span>Get In Touch</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-count="3">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="150">0</span>
+          <span class="stat-label">Sensor Nodes</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="70">0</span>
+          <span class="stat-label">% False Alarms Reduced</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-container">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="orbit-center">
+          <div class="avatar-container">
+            <img src="avatar.png" alt="Shivani Chaudhari" class="avatar-img" />
+          </div>
+        </div>
+        <div class="orbit-dot dot-1">Py</div>
+        <div class="orbit-dot dot-2">ML</div>
+        <div class="orbit-dot dot-3">Go</div>
+        <div class="orbit-dot dot-4">gRPC</div>
+        <div class="orbit-dot dot-5">Rx</div>
+        <div class="orbit-dot dot-6">FA</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm an <strong>AI/ML Engineer</strong> and <strong>Python Developer</strong> with 3 years at <strong>Hitachi Digital Services</strong>, building production ML pipelines, real-time gRPC data systems, and full-stack platforms deployed in secure on-premise environments.
+          </p>
+          <p>
+            Currently working on <strong>Echelon</strong> — a CBRN Command & Control System for the <strong>Government of India</strong> — deploying ML pipelines for anomaly detection, fault classification, and outlier detection on live sensor streams across <strong>150 sensor nodes</strong>.
+          </p>
+          <p>
+            Experienced in applying ML to high-stakes environments including <strong>national defence</strong> and enterprise software. Pursuing <strong>M.S. in AI/ML from Walsh College</strong> and completed PG in AI/ML from <strong>UT Austin</strong> with a <strong>4.06 GPA</strong>.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <span class="highlight-icon">&#x1F6A8;</span>
+              <span>70% reduction in false-positive alarms</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">&#x26A1;</span>
+              <span>500ms end-to-end latency achieved</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">&#x1F512;</span>
+              <span>Biometric auth for govt compliance</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">&#x1F3ED;</span>
+              <span>Secure on-premise deployment</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <span class="terminal-title">shivani@portfolio ~</span>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+              <div class="terminal-line"><span class="prompt">$</span> <span class="typed-cmd" data-cmd="cat about.txt"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Experience</span>
+        <h2 class="section-title">Where I've Worked</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="company-name">Hitachi Digital Services</h3>
+              <span class="timeline-date">Oct 2023 — Present</span>
+            </div>
+            <p class="role-title">Associate Developer | CBRN Command & Control System, Govt. of India</p>
+            <ul class="role-details">
+              <li>Architected and deployed <strong>ML pipelines</strong> (anomaly detection, fault classification, outlier detection) on live CBRN sensor streams for a national defence system</li>
+              <li>Reduced <strong>false-positive alarm rate by ~70%</strong> and enabled real-time incident classification across <strong>150 sensor nodes</strong> in a secure on-premise environment</li>
+              <li>Designed low-latency data ingestion layer using <strong>gRPC</strong> for high-frequency sensor streams, achieving <strong>500ms end-to-end latency</strong></li>
+              <li>Used <strong>SSE</strong> to push live alarm and incident updates to command-centre dashboards with zero polling overhead</li>
+              <li>Architected <strong>event-driven automation workflows</strong> converting sensor alarms into structured incidents with automatic SOP assignment</li>
+              <li>Built RESTful microservices in <strong>Node.js</strong> following hexagonal architecture</li>
+              <li>Optimised throughput via <strong>Redis caching</strong>; secured access using <strong>Keycloak (OAuth 2.0 / JWT)</strong></li>
+              <li>Integrated <strong>finger-vein biometric authentication</strong> for physical access control — a government compliance requirement</li>
+            </ul>
+            <div class="tech-tags">
+              <span>Python</span><span>gRPC</span><span>SSE</span><span>ML Pipelines</span><span>Node.js</span><span>Redis</span><span>Keycloak</span><span>On-Prem</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="company-name">Hitachi Digital Services</h3>
+              <span class="timeline-date">Feb 2023 — Oct 2023</span>
+            </div>
+            <p class="role-title">IoT Intern | Industrial IoT & Smart Office Platform</p>
+            <ul class="role-details">
+              <li>Built <strong>Python APIs</strong> integrating video analytics and facial recognition for real-time event ingestion</li>
+              <li>Enabled real-time <strong>PLC data retrieval via Modbus protocol</strong></li>
+              <li>Connected <strong>computer vision-driven access control</strong> with PLC-based door automation</li>
+              <li>Built analytics dashboards for people count, event trends, and recognition insights</li>
+            </ul>
+            <div class="tech-tags">
+              <span>Python</span><span>Computer Vision</span><span>Modbus</span><span>PLC</span><span>IoT</span><span>Dashboards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card featured">
+          <div class="project-visual">
+            <div class="project-mockup">
+              <div class="mockup-screen">
+                <div class="mockup-bar">
+                  <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="mockup-nav"></div>
+                  <div class="iq-viz">
+                    <div class="iq-ring ring-1"></div>
+                    <div class="iq-ring ring-2"></div>
+                    <div class="iq-ring ring-3"></div>
+                    <div class="iq-core">IQ</div>
+                  </div>
+                  <div class="mockup-grid">
+                    <div class="mockup-card"></div>
+                    <div class="mockup-card"></div>
+                    <div class="mockup-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/shivani3291-lab/corporate-pm-system" target="_blank" class="project-link" title="View Code">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">AI / Full-Stack</span>
+            <h3 class="project-title">Echelon — AI-Augmented Project Intelligence</h3>
+            <p class="project-desc">Enterprise project management platform with 4 AI/ML features: Document Auto-Classification (sentence-transformers + KNN), NLP Semantic Search (FAISS), Project Delay Prediction (scikit-learn regression), and a 3-stage Predictive Alert Pipeline. Full-stack: React 19 + TypeScript frontend, FastAPI ML microservice, Node.js/Express backend, SQL Server.</p>
+            <div class="project-tech">
+              <span>React 19</span><span>TypeScript</span><span>FastAPI</span><span>Node.js</span><span>SQL Server</span><span>Prisma</span><span>FAISS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-mockup">
+              <div class="mockup-screen">
+                <div class="mockup-bar">
+                  <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="sensor-grid">
+                    <div class="sensor-node active"></div>
+                    <div class="sensor-node"></div>
+                    <div class="sensor-node active"></div>
+                    <div class="sensor-node"></div>
+                    <div class="sensor-node active"></div>
+                    <div class="sensor-node"></div>
+                    <div class="sensor-node active"></div>
+                    <div class="sensor-node"></div>
+                    <div class="sensor-node"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <span class="project-link-locked" title="Company Project">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Defence / ML / On-Prem</span>
+            <h3 class="project-title">CBRN Command & Control System</h3>
+            <p class="project-desc">National defence system for the Government of India. ML pipelines for anomaly detection, fault classification, and outlier detection on live CBRN sensor streams across 150 nodes. Reduced false-positive alarms by 70%. Designed gRPC data ingestion achieving 500ms end-to-end latency. Event-driven automation converts sensor alarms into structured incidents with automatic SOP assignment. Secured with Keycloak OAuth 2.0/JWT and finger-vein biometric authentication.</p>
+            <div class="project-tech">
+              <span>Python</span><span>gRPC</span><span>SSE</span><span>ML Pipelines</span><span>Node.js</span><span>Redis</span><span>Keycloak</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-mockup">
+              <div class="mockup-screen">
+                <div class="mockup-bar">
+                  <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="iot-viz">
+                    <div class="iot-camera">&#x1F4F9;</div>
+                    <div class="iot-door">&#x1F6AA;</div>
+                    <div class="iot-pulse"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/shivani3291-lab" target="_blank" class="project-link" title="View Code">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">IoT / Computer Vision</span>
+            <h3 class="project-title">Smart Office Platform</h3>
+            <p class="project-desc">Video analytics, facial recognition, and PLC-based door automation with real-time Modbus data retrieval and analytics dashboards.</p>
+            <div class="project-tech">
+              <span>Python</span><span>CV</span><span>Modbus</span><span>PLC</span><span>IoT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-mockup">
+              <div class="mockup-screen">
+                <div class="mockup-bar">
+                  <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="ml-viz">
+                    <div class="ml-node n1"></div>
+                    <div class="ml-node n2"></div>
+                    <div class="ml-node n3"></div>
+                    <div class="ml-node n4"></div>
+                    <div class="ml-node n5"></div>
+                    <div class="ml-edge e1"></div>
+                    <div class="ml-edge e2"></div>
+                    <div class="ml-edge e3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/shivani3291-lab" target="_blank" class="project-link" title="View Code">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">NLP / Search</span>
+            <h3 class="project-title">Semantic Search Engine</h3>
+            <p class="project-desc">NLP-powered semantic search using sentence-transformers and FAISS for intelligent document retrieval and classification.</p>
+            <div class="project-tech">
+              <span>Python</span><span>sentence-transformers</span><span>FAISS</span><span>NLP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Skills</span>
+        <h2 class="section-title">My Tech Stack</h2>
+      </div>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-icon">&#x1F4BB;</span>
+            Languages
+          </h3>
+          <div class="skill-tags">
+            <div class="skill-tag" data-level="95"><span class="skill-name">Python</span><span class="skill-bar"><span style="width:95%"></span></span></div>
+            <div class="skill-tag" data-level="85"><span class="skill-name">Node.js</span><span class="skill-bar"><span style="width:85%"></span></span></div>
+            <div class="skill-tag" data-level="82"><span class="skill-name">TypeScript</span><span class="skill-bar"><span style="width:82%"></span></span></div>
+            <div class="skill-tag" data-level="75"><span class="skill-name">C++</span><span class="skill-bar"><span style="width:75%"></span></span></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-icon">&#x1F916;</span>
+            ML / AI
+          </h3>
+          <div class="skill-tags">
+            <div class="skill-tag" data-level="90"><span class="skill-name">scikit-learn</span><span class="skill-bar"><span style="width:90%"></span></span></div>
+            <div class="skill-tag" data-level="85"><span class="skill-name">NLP / BERT</span><span class="skill-bar"><span style="width:85%"></span></span></div>
+            <div class="skill-tag" data-level="82"><span class="skill-name">XGBoost</span><span class="skill-bar"><span style="width:82%"></span></span></div>
+            <div class="skill-tag" data-level="80"><span class="skill-name">LSTM</span><span class="skill-bar"><span style="width:80%"></span></span></div>
+            <div class="skill-tag" data-level="78"><span class="skill-name">sentence-transformers</span><span class="skill-bar"><span style="width:78%"></span></span></div>
+            <div class="skill-tag" data-level="75"><span class="skill-name">FAISS</span><span class="skill-bar"><span style="width:75%"></span></span></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-icon">&#x2699;</span>
+            Frameworks
+          </h3>
+          <div class="skill-tags">
+            <div class="skill-tag" data-level="92"><span class="skill-name">FastAPI</span><span class="skill-bar"><span style="width:92%"></span></span></div>
+            <div class="skill-tag" data-level="85"><span class="skill-name">Express.js</span><span class="skill-bar"><span style="width:85%"></span></span></div>
+            <div class="skill-tag" data-level="80"><span class="skill-name">React 18</span><span class="skill-bar"><span style="width:80%"></span></span></div>
+            <div class="skill-tag" data-level="88"><span class="skill-name">gRPC</span><span class="skill-bar"><span style="width:88%"></span></span></div>
+            <div class="skill-tag" data-level="85"><span class="skill-name">REST APIs</span><span class="skill-bar"><span style="width:85%"></span></span></div>
+            <div class="skill-tag" data-level="78"><span class="skill-name">SSE</span><span class="skill-bar"><span style="width:78%"></span></span></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-icon">&#x1F5C4;</span>
+            Databases
+          </h3>
+          <div class="skill-tags">
+            <div class="skill-tag" data-level="90"><span class="skill-name">PostgreSQL</span><span class="skill-bar"><span style="width:90%"></span></span></div>
+            <div class="skill-tag" data-level="85"><span class="skill-name">Azure SQL</span><span class="skill-bar"><span style="width:85%"></span></span></div>
+            <div class="skill-tag" data-level="82"><span class="skill-name">Redis</span><span class="skill-bar"><span style="width:82%"></span></span></div>
+            <div class="skill-tag" data-level="78"><span class="skill-name">Prisma ORM</span><span class="skill-bar"><span style="width:78%"></span></span></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-icon">&#x2601;</span>
+            Cloud & DevOps
+          </h3>
+          <div class="skill-tags">
+            <div class="skill-tag" data-level="90"><span class="skill-name">Azure</span><span class="skill-bar"><span style="width:90%"></span></span></div>
+            <div class="skill-tag" data-level="85"><span class="skill-name">Docker</span><span class="skill-bar"><span style="width:85%"></span></span></div>
+            <div class="skill-tag" data-level="80"><span class="skill-name">Kubernetes</span><span class="skill-bar"><span style="width:80%"></span></span></div>
+            <div class="skill-tag" data-level="82"><span class="skill-name">GitHub Actions</span><span class="skill-bar"><span style="width:82%"></span></span></div>
+            <div class="skill-tag" data-level="78"><span class="skill-name">CI/CD</span><span class="skill-bar"><span style="width:78%"></span></span></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-icon">&#x1F512;</span>
+            Security
+          </h3>
+          <div class="skill-tags">
+            <div class="skill-tag" data-level="88"><span class="skill-name">Keycloak</span><span class="skill-bar"><span style="width:88%"></span></span></div>
+            <div class="skill-tag" data-level="85"><span class="skill-name">OAuth 2.0</span><span class="skill-bar"><span style="width:85%"></span></span></div>
+            <div class="skill-tag" data-level="82"><span class="skill-name">JWT</span><span class="skill-bar"><span style="width:82%"></span></span></div>
+            <div class="skill-tag" data-level="75"><span class="skill-name">Biometric Auth</span><span class="skill-bar"><span style="width:75%"></span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / Education & Certifications</span>
+        <h2 class="section-title">Learning Never Stops</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">&#x1F393;</div>
+          <h3>M.S. in AI & Machine Learning</h3>
+          <p class="edu-school">Walsh College</p>
+          <p class="edu-date">Sep 2025 — Present</p>
+          <a href="https://olympus.mygreatlearning.com/eportfolio" target="_blank" class="edu-link">View Portfolio &#x2192;</a>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">&#x1F3EB;</div>
+          <h3>PG in AI & Machine Learning</h3>
+          <p class="edu-school">University of Texas at Austin</p>
+          <p class="edu-date">Jul 2024 — Jul 2025 | GPA: 4.06 / 5</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">&#x1F4DA;</div>
+          <h3>B.Tech in Computer Science & Engineering</h3>
+          <p class="edu-school">Nutan College of Engineering & Research, Pune</p>
+          <p class="edu-date">Aug 2019 — Aug 2023 | GPA: 9.2 / 10</p>
+        </div>
+      </div>
+
+      <h3 class="cert-title">Certifications</h3>
+      <div class="cert-grid">
+        <a href="https://learn.microsoft.com/en-us/users/shivanichaudhari-4165/credentials/2c9d79038c461fc3" target="_blank" class="cert-card">
+          <div class="cert-badge azure-900"></div>
+          <div class="cert-info">
+            <h4>Azure AI-900 (AI Fundamentals)</h4>
+            <p>Microsoft Certified</p>
+          </div>
+        </a>
+        <a href="https://learn.microsoft.com/en-us/users/shivanichaudhari-4165/credentials/80d259a0bb231b6d" target="_blank" class="cert-card">
+          <div class="cert-badge azure-102"></div>
+          <div class="cert-info">
+            <h4>Azure AI-102 (AI Engineer Associate)</h4>
+            <p>Microsoft Certified</p>
+          </div>
+        </a>
+        <a href="https://github.com/shivani3291-lab" target="_blank" class="cert-card">
+          <div class="cert-badge aws"></div>
+          <div class="cert-info">
+            <h4>AWS Code Jam Session</h4>
+            <p>Amazon Web Services</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-desc">
+            I'm currently open to new opportunities in AI/ML engineering, real-time systems, and full-stack development. Whether you have a question, want to collaborate, or just want to say hi — my inbox is always open!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:shivanichaudhari2001@gmail.com" class="contact-link">
+              <span class="contact-icon">&#x2709;</span>
+              <span>shivanichaudhari2001@gmail.com</span>
+            </a>
+            <a href="tel:+918788835203" class="contact-link">
+              <span class="contact-icon">&#x260E;</span>
+              <span>+91 8788835203</span>
+            </a>
+            <a href="https://www.linkedin.com/in/shivani-chaudhari-335200192/" target="_blank" class="contact-link">
+              <span class="contact-icon">in</span>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/shivani3291-lab" target="_blank" class="contact-link">
+              <span class="contact-icon">&#x2318;</span>
+              <span>GitHub</span>
+            </a>
+          </div>
+          <p class="contact-location">&#x1F4CD; Pune, India</p>
+        </div>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mgvkpzrv" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="footer-logo">SC<span class="dot">.</span></a>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/shivani-chaudhari-335200192/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/shivani3291-lab" target="_blank">GitHub</a>
+          <a href="mailto:shivanichaudhari2001@gmail.com">Email</a>
+        </div>
+        <p class="footer-copy">Built with passion by Shivani Chaudhari &copy; 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
