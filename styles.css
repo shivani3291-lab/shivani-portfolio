@@ -799,6 +799,18 @@ body:hover .cursor-glow { opacity: 1; }
   color: var(--accent);
 }
 
+.sub-project {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--border);
+}
+
+.sub-project .role-title {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
@@ -1139,6 +1151,136 @@ body:hover .cursor-glow { opacity: 1; }
 .e2 { top: 55%; left: 28%; width: 20%; transform: rotate(-5deg); }
 .e3 { top: 42%; left: 58%; width: 15%; transform: rotate(3deg); }
 
+/* CarVision Mockup */
+.car-viz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 18px;
+}
+
+.car-detect-box {
+  position: relative;
+  font-size: 2.6rem;
+  padding: 12px 26px;
+  border: 2px solid var(--accent-2);
+  border-radius: 10px;
+  animation: pulseRing 3s ease-in-out infinite;
+}
+
+.car-detect-box::after {
+  content: 'Sedan · 97%';
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  background: var(--accent-2);
+  color: #0a0a0f;
+  padding: 2px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.car-models {
+  display: flex;
+  gap: 8px;
+}
+
+.car-model-chip {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  padding: 4px 10px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--text-secondary);
+}
+
+/* News Classifier Mockup */
+.news-viz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 16px;
+}
+
+.news-doc {
+  font-size: 2.2rem;
+}
+
+.news-categories {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 220px;
+}
+
+.news-cat {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 6px 12px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+}
+
+.news-cat.active {
+  background: rgba(6, 182, 212, 0.15);
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+  animation: sensorPulse 2s ease-in-out infinite;
+}
+
+/* Stock Prediction Mockup */
+.stock-viz {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+  height: 100%;
+  padding: 24px 16px;
+  position: relative;
+}
+
+.stock-bar {
+  width: 12px;
+  border-radius: 3px 3px 0 0;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  transform-origin: bottom;
+  animation: stockPulse 2.4s ease-in-out infinite;
+}
+
+.stock-bar.up { background: rgba(34, 197, 94, 0.2); border-color: #22c55e; }
+.stock-bar.down { background: rgba(244, 63, 94, 0.15); border-color: var(--accent-3); }
+
+.stock-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+@keyframes stockPulse {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.08); }
+}
+
 /* Project Info */
 .project-overlay {
   position: absolute;
@@ -1225,6 +1367,71 @@ body:hover .cursor-glow { opacity: 1; }
 .project-tech span {
   font-family: var(--font-mono);
   font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+/* Always-visible project CTAs (not hover-dependent, works on touch too) */
+.project-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border-radius: 100px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.cta-link:hover {
+  border-color: var(--border-hover);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.cta-link svg {
+  flex-shrink: 0;
+}
+
+.cta-link.cta-live {
+  border-color: rgba(34, 197, 94, 0.35);
+  background: rgba(34, 197, 94, 0.08);
+  color: #22c55e;
+}
+
+.cta-link.cta-live:hover {
+  border-color: #22c55e;
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.cta-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+}
+
+.cta-link.cta-locked {
+  color: var(--text-muted);
+  cursor: default;
+  opacity: 0.7;
+}
+
+.cta-link.cta-locked:hover {
+  transform: none;
+  border-color: var(--border);
   color: var(--text-muted);
 }
 
@@ -1363,6 +1570,8 @@ body:hover .cursor-glow { opacity: 1; }
 }
 
 .edu-link {
+  position: relative;
+  z-index: 1;
   font-size: 0.85rem;
   color: var(--accent-2);
   transition: var(--transition);
@@ -1680,6 +1889,7 @@ body:hover .cursor-glow { opacity: 1; }
   mask-composite: exclude;
   opacity: 0;
   transition: var(--transition);
+  pointer-events: none;
 }
 
 .edu-card:hover::after { opacity: 0.5; }

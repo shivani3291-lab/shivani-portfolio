@@ -252,9 +252,9 @@ document.addEventListener('DOMContentLoaded', () => {
     { cmd: 'cat skills.json', output: [
       { text: '{', type: '' },
       { text: '  "languages": ["Python", "Node.js", "TypeScript"],', type: 'info' },
-      { text: '  "ml_ai": ["scikit-learn", "BERT", "FAISS"],', type: 'info' },
-      { text: '  "frameworks": ["FastAPI", "gRPC", "React"],', type: 'info' },
-      { text: '  "cloud": ["Azure", "Docker", "Kubernetes"],', type: 'info' },
+      { text: '  "ml_ai": ["PyTorch", "scikit-learn", "BERT", "FAISS", "YOLOv8"],', type: 'info' },
+      { text: '  "frameworks": ["FastAPI", "gRPC", "React", "Django"],', type: 'info' },
+      { text: '  "cloud": ["Azure", "Docker", "Kubernetes", "MLflow"],', type: 'info' },
       { text: '  "security": ["Keycloak", "OAuth 2.0", "JWT"]', type: 'info' },
       { text: '}', type: '' },
     ]},

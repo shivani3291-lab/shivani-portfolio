@@ -119,7 +119,7 @@
             I'm an <strong>AI/ML Engineer</strong> and <strong>Python Developer</strong> with 3 years at <strong>Hitachi Digital Services</strong>, building production ML pipelines, real-time gRPC data systems, and full-stack platforms deployed in secure on-premise environments.
           </p>
           <p>
-            Currently working on <strong>Echelon</strong> — a CBRN Command & Control System for the <strong>Government of India</strong> — deploying ML pipelines for anomaly detection, fault classification, and outlier detection on live sensor streams across <strong>150 sensor nodes</strong>.
+            As part of a <strong>CBRN Command & Control System</strong> for the <strong>Government of India</strong>, I deploy ML pipelines for anomaly detection, fault classification, and outlier detection on live sensor streams across <strong>150 sensor nodes</strong>.
           </p>
           <p>
             Experienced in applying ML to high-stakes environments including <strong>national defence</strong> and enterprise software. Pursuing <strong>M.S. in AI/ML from Walsh College</strong> and completed PG in AI/ML from <strong>UT Austin</strong> with a <strong>4.06 GPA</strong>.
@@ -179,19 +179,30 @@
               <h3 class="company-name">Hitachi Digital Services</h3>
               <span class="timeline-date">Oct 2023 — Present</span>
             </div>
-            <p class="role-title">Associate Developer | CBRN Command & Control System, Govt. of India</p>
+            <p class="role-title">Backend & ML Developer | CBRN Command & Control System, Govt. of India</p>
             <ul class="role-details">
-              <li>Architected and deployed <strong>ML pipelines</strong> (anomaly detection, fault classification, outlier detection) on live CBRN sensor streams for a national defence system</li>
-              <li>Reduced <strong>false-positive alarm rate by ~70%</strong> and enabled real-time incident classification across <strong>150 sensor nodes</strong> in a secure on-premise environment</li>
-              <li>Designed low-latency data ingestion layer using <strong>gRPC</strong> for high-frequency sensor streams, achieving <strong>500ms end-to-end latency</strong></li>
-              <li>Used <strong>SSE</strong> to push live alarm and incident updates to command-centre dashboards with zero polling overhead</li>
-              <li>Architected <strong>event-driven automation workflows</strong> converting sensor alarms into structured incidents with automatic SOP assignment</li>
-              <li>Built RESTful microservices in <strong>Node.js</strong> following hexagonal architecture</li>
-              <li>Optimised throughput via <strong>Redis caching</strong>; secured access using <strong>Keycloak (OAuth 2.0 / JWT)</strong></li>
+              <li>Architected and delivered an end-to-end real-time <strong>gRPC</strong> pipeline for live CBRN sensor data ingestion, using <strong>SSE</strong> to push alarm and incident updates to command-centre dashboards with zero polling overhead and <strong>Redis</strong> caching to sustain high-frequency throughput at <strong>500ms end-to-end latency</strong> across <strong>150 sensor nodes</strong></li>
+              <li>Built ML models for <strong>anomaly detection, outlier correlation, and intensity estimation</strong> on live sensor streams, generating real-time analytics alerts for operators</li>
+              <li>Designed <strong>event-driven incident automation</strong> that converts sensor alarms and health faults into structured incidents, each auto-assigned a predefined <strong>Standard Operating Procedure (SOP)</strong></li>
+              <li>Built a <strong>seasonal drift-detection pipeline</strong> that identifies data drift across seasonal conditions (e.g. monsoon, winter) and automatically retrains and switches to season-specific models to preserve detection accuracy</li>
+              <li>Implemented an <strong>operator feedback loop</strong> capturing true/false-positive alarm labels and feeding them back into model retraining, cutting the <strong>false-positive alarm rate by ~70%</strong></li>
+              <li>Built RESTful microservices in <strong>Node.js</strong> following hexagonal architecture; secured access using <strong>Keycloak (OAuth 2.0 / JWT)</strong></li>
               <li>Integrated <strong>finger-vein biometric authentication</strong> for physical access control — a government compliance requirement</li>
             </ul>
             <div class="tech-tags">
-              <span>Python</span><span>gRPC</span><span>SSE</span><span>ML Pipelines</span><span>Node.js</span><span>Redis</span><span>Keycloak</span><span>On-Prem</span>
+              <span>Python</span><span>gRPC</span><span>SSE</span><span>Anomaly Detection</span><span>Drift Detection</span><span>Node.js</span><span>Redis</span><span>Keycloak</span><span>On-Prem</span>
+            </div>
+
+            <div class="sub-project">
+              <p class="role-title">HVS Media Control Server — Steel Defect Detection Integration</p>
+              <ul class="role-details">
+                <li>Integrated a custom <strong>YOLOX</strong>-based, 6-class steel surface defect detection model into Hitachi's HVS video analytics platform, enabling on-demand <strong>VOD analysis</strong> and <strong>HLS playback</strong> of annotated inspection footage</li>
+                <li>Extended the HSMS model registry and VOD analyze API to support a new steel-defect analytics type, with <strong>MQTT</strong>-based routing between GPU detection workers and the rendering engine, backed by on-demand <strong>GPU worker</strong> infrastructure</li>
+                <li>Debugged end-to-end pipeline issues across frame extraction, MQTT handshakes, and HLS delivery, including root-causing a truncated <strong>PyTorch</strong> checkpoint-loading bug and validating the fix path for production deployment</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Python</span><span>YOLOX</span><span>PyTorch</span><span>Docker</span><span>MQTT/RabbitMQ</span><span>OpenCV</span><span>HLS</span><span>CUDA</span>
+              </div>
             </div>
           </div>
         </div>
@@ -254,6 +265,9 @@
             </div>
             <div class="project-overlay">
               <div class="project-links">
+                <a href="https://corporate-pm-frontend-bgeyefcjcqgpb9hf.centralindia-01.azurewebsites.net/dashboard" target="_blank" class="project-link" title="View Live Demo">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
                 <a href="https://github.com/shivani3291-lab/corporate-pm-system" target="_blank" class="project-link" title="View Code">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                 </a>
@@ -263,9 +277,18 @@
           <div class="project-info">
             <span class="project-type">AI / Full-Stack</span>
             <h3 class="project-title">Echelon — AI-Augmented Project Intelligence</h3>
-            <p class="project-desc">Enterprise project management platform with 4 AI/ML features: Document Auto-Classification (sentence-transformers + KNN), NLP Semantic Search (FAISS), Project Delay Prediction (scikit-learn regression), and a 3-stage Predictive Alert Pipeline. Full-stack: React 19 + TypeScript frontend, FastAPI ML microservice, Node.js/Express backend, SQL Server.</p>
+            <p class="project-desc">Enterprise project management platform with 5 AI/ML features: Document Auto-Classification (sentence-transformers + KNN), NLP Semantic Search (FAISS), Project Delay Prediction (scikit-learn regression), a 3-stage Predictive Alert Pipeline, and a RAG chatbot with a built-in AI observability dashboard — tracing retrieval quality, groundedness, hallucination risk, latency, and token cost per query, not just uptime. Full-stack: React 19 + TypeScript frontend, FastAPI ML microservice, Node.js/Express backend, SQL Server.</p>
             <div class="project-tech">
-              <span>React 19</span><span>TypeScript</span><span>FastAPI</span><span>Node.js</span><span>SQL Server</span><span>Prisma</span><span>FAISS</span>
+              <span>React 19</span><span>TypeScript</span><span>FastAPI</span><span>Node.js</span><span>SQL Server</span><span>Prisma</span><span>FAISS</span><span>RAG</span><span>AI Observability</span>
+            </div>
+            <div class="project-cta">
+              <a href="https://corporate-pm-frontend-bgeyefcjcqgpb9hf.centralindia-01.azurewebsites.net/dashboard" target="_blank" class="cta-link cta-live">
+                <span class="cta-dot"></span> Live Demo
+              </a>
+              <a href="https://github.com/shivani3291-lab/corporate-pm-system" target="_blank" class="cta-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
             </div>
           </div>
         </div>
@@ -307,6 +330,155 @@
             <div class="project-tech">
               <span>Python</span><span>gRPC</span><span>SSE</span><span>ML Pipelines</span><span>Node.js</span><span>Redis</span><span>Keycloak</span>
             </div>
+            <div class="project-cta">
+              <span class="cta-link cta-locked">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Company Project
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-mockup">
+              <div class="mockup-screen">
+                <div class="mockup-bar">
+                  <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="car-viz">
+                    <div class="car-detect-box">&#x1F697;</div>
+                    <div class="car-models">
+                      <span class="car-model-chip">YOLOv8</span>
+                      <span class="car-model-chip">ResNet50</span>
+                      <span class="car-model-chip">EfficientNet</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://cardetection-fvwv567sbk9exwnkaepikr.streamlit.app/" target="_blank" class="project-link" title="View Live Demo">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com/shivani3291-lab/CarDetection" target="_blank" class="project-link" title="View Code">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Computer Vision / MLOps</span>
+            <h3 class="project-title">CarVision AI — Car Detection & Classification</h3>
+            <p class="project-desc">End-to-end deep learning system on the Stanford Cars dataset (196 classes, ~16K images) benchmarking CNN, ResNet50, EfficientNet, Faster R-CNN, and YOLOv8. MLflow experiment tracking, DVC data versioning, ONNX model export, Great Expectations data validation, and a multi-page Streamlit dashboard — containerized with Docker and CI/CD via GitHub Actions.</p>
+            <div class="project-tech">
+              <span>PyTorch</span><span>TensorFlow</span><span>YOLOv8</span><span>MLflow</span><span>Docker</span><span>ONNX</span>
+            </div>
+            <div class="project-cta">
+              <a href="https://cardetection-fvwv567sbk9exwnkaepikr.streamlit.app/" target="_blank" class="cta-link cta-live">
+                <span class="cta-dot"></span> Live Demo
+              </a>
+              <a href="https://github.com/shivani3291-lab/CarDetection" target="_blank" class="cta-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-mockup">
+              <div class="mockup-screen">
+                <div class="mockup-bar">
+                  <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="news-viz">
+                    <div class="news-doc">&#x1F4F0;</div>
+                    <div class="news-categories">
+                      <span class="news-cat active">World</span>
+                      <span class="news-cat">Sports</span>
+                      <span class="news-cat">Business</span>
+                      <span class="news-cat">Sci/Tech</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://news-article-classifier-eyd497t5avdhywvkmqbzu3.streamlit.app/" target="_blank" class="project-link" title="View Live Demo">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com/shivani3291-lab/news-article-classifier" target="_blank" class="project-link" title="View Code">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">NLP / Text Classification</span>
+            <h3 class="project-title">News Article Classifier</h3>
+            <p class="project-desc">Categorizes news into World, Sports, Business, and Sci/Tech using 384-dim sentence-transformer embeddings over a balanced 4,000-article dataset. Benchmarked a tuned Random Forest (88% accuracy) against FLAN-T5, where engineered prompting lifted accuracy from 66% to 92% (0.92 F1-score).</p>
+            <div class="project-tech">
+              <span>Python</span><span>sentence-transformers</span><span>FLAN-T5</span><span>scikit-learn</span><span>Prompt Engineering</span>
+            </div>
+            <div class="project-cta">
+              <a href="https://news-article-classifier-eyd497t5avdhywvkmqbzu3.streamlit.app/" target="_blank" class="cta-link cta-live">
+                <span class="cta-dot"></span> Live Demo
+              </a>
+              <a href="https://github.com/shivani3291-lab/news-article-classifier" target="_blank" class="cta-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-mockup">
+              <div class="mockup-screen">
+                <div class="mockup-bar">
+                  <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="stock-viz">
+                    <span class="stock-tag">&#x2191; 12.4%</span>
+                    <div class="stock-bar up" style="height:35%; animation-delay:0s"></div>
+                    <div class="stock-bar down" style="height:55%; animation-delay:0.2s"></div>
+                    <div class="stock-bar up" style="height:40%; animation-delay:0.4s"></div>
+                    <div class="stock-bar up" style="height:70%; animation-delay:0.6s"></div>
+                    <div class="stock-bar down" style="height:50%; animation-delay:0.8s"></div>
+                    <div class="stock-bar up" style="height:85%; animation-delay:1s"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/shivani3291-lab/StockPrediction" target="_blank" class="project-link" title="View Code">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Full-Stack / Predictive ML</span>
+            <h3 class="project-title">Stock Price Prediction App</h3>
+            <p class="project-desc">Django web app that pulls real-time and historical OHLC data via the Yahoo Finance API and forecasts prices 1–365 days out with scikit-learn regression. Interactive multi-stock comparison dashboards built with Plotly, plus input validation and graceful handling of live API failures.</p>
+            <div class="project-tech">
+              <span>Django</span><span>yfinance</span><span>scikit-learn</span><span>Plotly</span><span>Bootstrap</span>
+            </div>
+            <div class="project-cta">
+              <a href="https://github.com/shivani3291-lab/StockPrediction" target="_blank" class="cta-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
+            </div>
           </div>
         </div>
 
@@ -340,6 +512,12 @@
             <p class="project-desc">Video analytics, facial recognition, and PLC-based door automation with real-time Modbus data retrieval and analytics dashboards.</p>
             <div class="project-tech">
               <span>Python</span><span>CV</span><span>Modbus</span><span>PLC</span><span>IoT</span>
+            </div>
+            <div class="project-cta">
+              <a href="https://github.com/shivani3291-lab" target="_blank" class="cta-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
             </div>
           </div>
         </div>
@@ -380,6 +558,12 @@
             <div class="project-tech">
               <span>Python</span><span>sentence-transformers</span><span>FAISS</span><span>NLP</span>
             </div>
+            <div class="project-cta">
+              <a href="https://github.com/shivani3291-lab" target="_blank" class="cta-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Code
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -413,11 +597,13 @@
           </h3>
           <div class="skill-tags">
             <div class="skill-tag" data-level="90"><span class="skill-name">scikit-learn</span><span class="skill-bar"><span style="width:90%"></span></span></div>
-            <div class="skill-tag" data-level="85"><span class="skill-name">NLP / BERT</span><span class="skill-bar"><span style="width:85%"></span></span></div>
+            <div class="skill-tag" data-level="85"><span class="skill-name">PyTorch / TensorFlow</span><span class="skill-bar"><span style="width:85%"></span></span></div>
+            <div class="skill-tag" data-level="85"><span class="skill-name">NLP / Transformers</span><span class="skill-bar"><span style="width:85%"></span></span></div>
+            <div class="skill-tag" data-level="80"><span class="skill-name">Computer Vision (YOLO/CNN)</span><span class="skill-bar"><span style="width:80%"></span></span></div>
             <div class="skill-tag" data-level="82"><span class="skill-name">XGBoost</span><span class="skill-bar"><span style="width:82%"></span></span></div>
-            <div class="skill-tag" data-level="80"><span class="skill-name">LSTM</span><span class="skill-bar"><span style="width:80%"></span></span></div>
             <div class="skill-tag" data-level="78"><span class="skill-name">sentence-transformers</span><span class="skill-bar"><span style="width:78%"></span></span></div>
             <div class="skill-tag" data-level="75"><span class="skill-name">FAISS</span><span class="skill-bar"><span style="width:75%"></span></span></div>
+            <div class="skill-tag" data-level="75"><span class="skill-name">MLflow / DVC</span><span class="skill-bar"><span style="width:75%"></span></span></div>
           </div>
         </div>
         <div class="skill-category">
@@ -428,7 +614,8 @@
           <div class="skill-tags">
             <div class="skill-tag" data-level="92"><span class="skill-name">FastAPI</span><span class="skill-bar"><span style="width:92%"></span></span></div>
             <div class="skill-tag" data-level="85"><span class="skill-name">Express.js</span><span class="skill-bar"><span style="width:85%"></span></span></div>
-            <div class="skill-tag" data-level="80"><span class="skill-name">React 18</span><span class="skill-bar"><span style="width:80%"></span></span></div>
+            <div class="skill-tag" data-level="82"><span class="skill-name">React 18/19</span><span class="skill-bar"><span style="width:82%"></span></span></div>
+            <div class="skill-tag" data-level="75"><span class="skill-name">Django</span><span class="skill-bar"><span style="width:75%"></span></span></div>
             <div class="skill-tag" data-level="88"><span class="skill-name">gRPC</span><span class="skill-bar"><span style="width:88%"></span></span></div>
             <div class="skill-tag" data-level="85"><span class="skill-name">REST APIs</span><span class="skill-bar"><span style="width:85%"></span></span></div>
             <div class="skill-tag" data-level="78"><span class="skill-name">SSE</span><span class="skill-bar"><span style="width:78%"></span></span></div>
@@ -488,13 +675,14 @@
           <h3>M.S. in AI & Machine Learning</h3>
           <p class="edu-school">Walsh College</p>
           <p class="edu-date">Sep 2025 — Present</p>
-          <a href="https://olympus.mygreatlearning.com/eportfolio" target="_blank" class="edu-link">View Portfolio &#x2192;</a>
+          <a href="https://www.mygreatlearning.com/eportfolio/shivani-chaudhari2" target="_blank" class="edu-link">View Portfolio &#x2192;</a>
         </div>
         <div class="edu-card">
           <div class="edu-icon">&#x1F3EB;</div>
           <h3>PG in AI & Machine Learning</h3>
           <p class="edu-school">University of Texas at Austin</p>
           <p class="edu-date">Jul 2024 — Jul 2025 | GPA: 4.06 / 5</p>
+          <a href="https://www.mygreatlearning.com/eportfolio/shivani-chaudhari" target="_blank" class="edu-link">View Portfolio &#x2192;</a>
         </div>
         <div class="edu-card">
           <div class="edu-icon">&#x1F4DA;</div>
